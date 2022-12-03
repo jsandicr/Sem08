@@ -60,7 +60,11 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.0'
 
      //DAD Entity
-    annotationProcessor 'androidx.room:room-compiler:2.4.3'
-    kapt 'androidx.room:room-compiler:2.4.3'
-    implementation 'androidx.room:room-ktx:2.4.3'
+    //annotationProcessor 'androidx.room:room-compiler:2.4.3'
+    //kapt 'androidx.room:room-compiler:2.4.3'
+    //implementation 'androidx.room:room-ktx:2.4.3'
+
+    //Firebase
+    implementation 'com.google.firebase:firebase-firestore-ktx'
+    implementation platform('com.google.firebase:firebase-bom:29.0.1')
 }

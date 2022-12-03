@@ -1,16 +1,11 @@
 package com.sem08.model
 
-import android.os.Parcel
 import android.os.Parcelable
-import androidx.room.ColumnInfo
-import androidx.room.Entity
-import androidx.room.PrimaryKey
 import kotlinx.parcelize.Parcelize
 
 @Parcelize
-@Entity(tableName = "lugar")
 data class Lugar(
-    @PrimaryKey(autoGenerate = true)
+    /*@PrimaryKey(autoGenerate = true)
     val id: Int,
     @ColumnInfo(name = "nombre")
     val nombre: String,
@@ -19,5 +14,14 @@ data class Lugar(
     @ColumnInfo(name = "telefono")
     val telefono: String?,
     @ColumnInfo(name = "web")
+    val web: String?*/
+
+    var id: String,
+    val nombre: String,
+    val correo: String?,
+    val telefono: String?,
     val web: String?
-) : Parcelable {}
+) : Parcelable {
+    constructor():
+        this("", "", "", "", "")
+}
